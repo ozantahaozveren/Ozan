@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ozan & Sevilay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="https://www.youtube.com/embed/C0dp2vPNl2w" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <h1>Ozan & Sevilay</h1>
+        <p>Canımın içiyle geçen en özel anlar</p>
+    </header>
+
+    <section class="counter">
+        <h2>Birlikte Geçen Gün Sayısı</h2>
+        <p id="daysTogether"></p>
+    </section>
+
+    <section class="gallery">
+        <h2>Fotoğraflarımız</h2>
+        <img src="images/foto1.jpg" alt="Biz">
+        <img src="images/foto2.jpg" alt="Biz">
+        <img src="images/foto3.jpg" alt="Biz">
+    </section>
+
+    <section class="story">
+        <h2>Hikayemiz</h2>
+        <p>Bak seni ilk gördüğüm gün 🥰 İlk Kokunu Aldığım Gün😘 İlk defa Tenine dokunduğum gün🫠 Kooskoca Bir Aşkın Başladığı ❤️ Kalbimin Sana Tutulduğu Gün❤️‍🔥
+        Biliyorum Seni Bazen Üzdüm 🥺 Seni Bazen Kırdım Özür dilerim Sevgilim Tek Aşkımm Sensin Canım Karıcığımm İyi ki Hayatımdasın
+        Seni Çoooook Ama Çoooook Seviyorum Havuç Kafam🫶🤍🥕</p>
+    </section>
+
+    <script>
+        const startDate = new Date("2024-04-13");
+        const today = new Date();
+        const diffTime = Math.abs(today - startDate);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+        document.getElementById("daysTogether").innerText = diffDays + " gündür birlikteyiz 💞";
+    </script>
+</body>
+</html>
